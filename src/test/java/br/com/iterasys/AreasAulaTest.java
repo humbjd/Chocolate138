@@ -54,4 +54,5 @@ public class AreasAulaTest {
         //Valida
         Assert.assertEquals(resultadoAtual, resultadoEsperado);
     }
+
 }
