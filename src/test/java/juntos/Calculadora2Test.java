@@ -24,8 +24,10 @@ public class Calculadora2Test {
         return new Object[][]{
                 { 5, 7, 35  },
                 { 2, 10, 20 },
-                { 20, 0, 0  }
-        }; // Fecha o return
+                { 20, 0, 0  },
+                { -5, 12,-60},
+                {-5, -6, 30 }
+        }; // fecha o return
     }
 
 
@@ -75,6 +77,19 @@ public class Calculadora2Test {
         // Assert
         Assert.assertEquals(resultadoAtual, resultadoEsperado);
     }
+
+    @Test(dataProvider = "MassaMultiplicar")
+    public void testeMultiplicarDD(double num1, double num2, double resultadoEsperado) {
+        // Configura / Arrange
+        // Os dados são fornecidos para o teste através de uma lista
+
+        // Executa / Act
+        double resultadoAtual = Calculadora2.multiplicar(num1, num2);
+
+        // Valida / Assert
+        Assert.assertEquals(resultadoAtual, resultadoEsperado);
+    }
+
 
     @Test
     public void testeDividir() {
