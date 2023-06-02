@@ -1,0 +1,11 @@
+TESTE DE UNIDADE
+
+Criar scripts que testem métodos e funções
+"Código que testa código"
+
+Muitas pessoas sabem apenas fazer testes individuais
+
+Existe uma forma melhor de executar muitiplus testes variando seus valores
+É chamado de DDT - Data Driven Testing = Test Direcionado por Dados
+
+

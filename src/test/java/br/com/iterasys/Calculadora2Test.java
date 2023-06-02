@@ -30,5 +30,4 @@ public class Calculadora2Test {
         Assert.assertEquals(resultadoAtual, resultadoEsperado);
     }
 
-
 }
