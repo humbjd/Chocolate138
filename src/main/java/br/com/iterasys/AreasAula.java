@@ -8,4 +8,5 @@ public class AreasAula {
     public static double calcularCirculo(double raio){ return Math.PI * Math.pow(raio, 2); }
 
 
+
 }
