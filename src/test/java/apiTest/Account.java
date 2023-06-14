@@ -84,7 +84,7 @@ public class Account {
                 .log().all()
                 .statusCode(200) // valida a comunicação
                 .body("status", is("Success")) // Status = sucesso
-                .body()
+                .body("result", is("User authorized successfully."))
         .extract()
         ; // fim do codigo testGenerateToken
 
