@@ -31,7 +31,7 @@ public class Account {
     public void testCreateUser(){
         // Configura - Arrange
         AccountEntity account = new AccountEntity(); // Instancia a entidade usuário
-        account.userName = "charlie308"; // entrada e saida (resultado esperado)
+        account.userName = "charlie309"; // entrada e saida (resultado esperado)
         account.password = "P@ss0rd1"; // entrada
 
         jsonBody = gson.toJson(account); // Converte a entidade usuário no formato json
@@ -85,7 +85,7 @@ public class Account {
                 .statusCode(200) // valida a comunicação
                 .body("status", is("Success")) // Status = sucesso
                 .body("result", is("User authorized successfully."))
-        .extract()
+                .extract()
         ; // fim do codigo testGenerateToken
 
         // Extração do Token
