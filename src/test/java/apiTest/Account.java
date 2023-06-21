@@ -31,7 +31,7 @@ public class Account {
     public void testCreateUser(){
         // Configura - Arrange
 
-        account.userName = "charlie328"; // entrada e saida (resultado esperado)
+        account.userName = "charlie3311"; // entrada e saida (resultado esperado)
         account.password = "P@ss0rd1"; // entrada
 
         jsonBody = gson.toJson(account); // Converte a entidade usuário no formato json
@@ -45,7 +45,7 @@ public class Account {
 
         // Dado - Quando - Então
         // Given - When - Then
-        resposta = (Response) given()      // dado
+        resposta = (Response) given()               // dado
                 .contentType(ct)                    // tipo do conteudo
                 .log().all()                        // registre tudo na ida
                 .body(jsonBody)                     // corpo da msg que será enviada
@@ -178,5 +178,26 @@ public class Account {
         ;// fim do codigo testResearchUser
     }
 
+    @Test(priority = 6)
+    public void testDeleteUser(){
+        // Configura
+        // Dados de entrada vem do método de teste da criação do usuário (userId)
+        // Resultado esperado é o código e mensagem de sucesso na exclusão do usuário
+
+        // Executa
+        given()
+                .contentType(ct)
+                .log().all()
+                .header("Authorization", "Bearer " + token)
+        .when()
+                .delete(uri + "User/" + userId)
+
+        // Valida
+        .then()
+                .log().all()
+                .statusCode(204)
+        ;// fim do código
+
+    }
 
 }
