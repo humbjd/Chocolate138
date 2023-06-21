@@ -19,7 +19,7 @@ public class Account {
     String jsonBody; // guardar o json que será enviado
     String uri = "https://bookstore.toolsqa.com/Account/v1/"; // Endereço base
     Response resposta; // guardar o retorno da API
-    String token; // guardar o token - autenticação do usuario
+    static String token; // guardar o token - autenticação do usuario
 
 
     // Instanciar Classes Externas
@@ -178,7 +178,7 @@ public class Account {
         ;// fim do codigo testResearchUser
     }
 
-    @Test(priority = 6)
+    @Test(priority = 20)
     public void testDeleteUser(){
         // Configura
         // Dados de entrada vem do método de teste da criação do usuário (userId)
