@@ -23,13 +23,16 @@ public class Account {
     static String token; // guardar o token - autenticação do usuario
 
 
+
     // Instanciar Classes Externas
     Gson gson = new Gson(); // Instancia o objeto de conversão classe para json
     AccountEntity account = new AccountEntity(); // Instancia a entidade usuário
+
+
     // Metodos e Funcoes
     // Metodo #1 - Criar Usuário
     @Test(priority = 1)
-    public void testCreateUser(){
+    public void testCreateUser(ITestContext context){
         // Configura - Arrange
 
         account.userName = "charlie3312"; // entrada e saida (resultado esperado)
@@ -62,6 +65,7 @@ public class Account {
 
         // extrair o UserID (identificação do usuário)
          userId = resposta.jsonPath().getString("userID");
+         context.setAttribute("userId", userId);
          System.out.println("UserId extraido: " + userId);
 
 
