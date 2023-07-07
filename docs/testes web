@@ -1,0 +1,42 @@
+Testes Web
+Aplicações Web
+- Sites
+- Intranet (portal interno da empresa)
+- Extranet (integração com parceiros e fornecedores)
+
+3 Formas de automatizar:
+- Gravação - Record & Play - Selenium IDE
+- Programação - Direto na IDE com os frameworks como Selenium WebDriver e Cypress
+- Híbrido - Usa a gravação como acelarador e depois continua por programação
+  Existem alguns modelos de arquitetura (forma como organizamos o código fonte):
+> Simples: Tudo em 1 script
+> Associada com práticas de BDD: Selenium + Cucumber:
+    1 script de feature em Gherkin + 1 script com passos
+> Page Objects / Page Factory: 1 mapeamento por página, 1 feature e 1 com os passos
+
+
+Selenium
+- Framework mais tradicional de automação Web
+- EUA, trabalhavam para ThoughtWorks (TW)
+- Open source, gratuito
+- 2004
+
+Diferenciais
+- Multi Sistema Operacional: Windows, Linux, OSX e outros
+- Multi Browser: Chrome, Firefox, Opera, Safari, Edge
+- Multi Linguagem: C#, Java, JavaScript, Python, Ruby, Excel VBA
+
+Curiosidades:
+- Nome: Elemento Quimico, metálico, Símbolo SE
+> Mercury > HP > Borland QA Runner
+> Mineral é usado para fazer shampoo anti caspa, alto-falantes e * pesticidas *
+
+Selenium IDE
+- Criado em 2007
+- Japão - TW - Mulher
+- Criar uma ferramenta de produtividade para facilitar a automação de teste
+- Até 2010, aconteceram vários problemas e foi acusada de escrever muito código
+- De 2017 a 2018, parou de exportar código (funcionalidade principal)
+- É uma extensão para navegadores: Chrome, Firefox e Edge
+
+
