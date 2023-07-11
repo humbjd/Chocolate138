@@ -39,4 +39,8 @@ Selenium IDE
 - De 2017 a 2018, parou de exportar código (funcionalidade principal)
 - É uma extensão para navegadores: Chrome, Firefox e Edge
 
+Imagine uma Sprint de 1 semana
 
+Segunda        |   Terça        |   Quarta             |       Quinta          |        Sexta
+Planejamento       Organizar      T.Manual(6h)               T.Manual(6h)               T/D (2h)
+Cri. Aceite        Prep Massa     Abrir defeitos             Abrir defeitos             *****
