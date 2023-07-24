@@ -18,6 +18,7 @@ import static org.testng.Assert.assertTrue;
 
 public class selectProduct {
     // Atributos
+    //
     WebDriver driver;
 
     @BeforeAll // Executa antes de todos os blocos de passos --> usar do Cucumber
