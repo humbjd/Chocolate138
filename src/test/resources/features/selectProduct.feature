@@ -45,4 +45,3 @@ Feature: Select Product in Store
       | user                      | password        | productId | productTitle            | productPrice |
       | "standard_user"           | "secret_sauce"  | "4"       | "Sauce Labs Backpack"   | "$29.99"     |
       | "performance_glitch_user" | "secret_sauce"  | "0"       | "Sauce Labs Bike Light" | "$9.99"      |
-
