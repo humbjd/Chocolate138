@@ -26,8 +26,8 @@ public class selectProductPO {
 
 
     // Construtor
-    public selectProductPO(BasePage basePage){
-        this.driver = basePage.driver; // passagem de bola = integraçao Selenium dentro e fora
+    public selectProductPO(CommonPage commonPage){
+        this.driver = commonPage.driver; // passagem de bola = integraçao Selenium dentro e fora
     }
 
 

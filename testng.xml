@@ -2,7 +2,7 @@
 <suite name="TestNG Cucumber Suite" parallel="none">
     <test name="Teste Cucumber">
         <classes>
-            <class name="steps.Runner" />
+            <class name="stepsPO.Runner" /></class>
         </classes>
     </test>
 </suite>

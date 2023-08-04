@@ -23,6 +23,14 @@ utilize um device farm / serviço de teste em nuvem
 - BrowserStack
 - Perfecto
 
+Roteiro de Mapeamento para Automação
+- Requisito: smartphone ou emulador, local ou remoto (Saucelabs)
+- Instalar o app que eu quero testar (software alvo)
+- Instalar um app de inspeção --> Apk info
+- Com os dois instalados, verifique pelo APk info as informaçoes
+-->  appPackage: com.saucelabs.mydemoapp.android
+-->  appActivity: com.saucelabs.mydemoapp.android.view.activities.SplashActivity
+
 
 
 
