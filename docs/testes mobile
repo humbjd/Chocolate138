@@ -25,11 +25,19 @@ utilize um device farm / serviço de teste em nuvem
 
 Roteiro de Mapeamento para Automação
 - Requisito: smartphone ou emulador, local ou remoto (Saucelabs)
-- Instalar o app que eu quero testar (software alvo)
+- Instalar o app que eu quero testar (software alvo) --> MDA My Demo App
 - Instalar um app de inspeção --> Apk info
 - Com os dois instalados, verifique pelo APk info as informaçoes
 -->  appPackage: com.saucelabs.mydemoapp.android
 -->  appActivity: com.saucelabs.mydemoapp.android.view.activities.SplashActivity
+- Instalar o Appium Inspector
+- Configurar as credenciais do Appium ou da Device Farm desejada (Sauce Labs)
+- Configurar as desired capabilities
+- Executar e mapear os elementos
+- Copiar o codigo gerado
+
+
+
 
 
 
