@@ -7,15 +7,11 @@ import org.openqa.selenium.support.PageFactory;
 
 public class InventoryItemPage extends CommonPage {
     // Elementos
-    @FindBy(css = "inventory_details_name large_size")
+    @FindBy(css = "div.inventory_details_name.large_size")
     WebElement lblTituloProduto;
 
-    @FindBy(css = "inventory_details_price")
+    @FindBy(css = "div.inventory_details_price")
     WebElement lblPrecoProduto;
-
-    @FindBy(css = "btn btn_primary btn_small btn_inventory")
-    WebElement btnAdicionarOuRemoverNoCarrinho;
-
 
 
 
@@ -25,14 +21,17 @@ public class InventoryItemPage extends CommonPage {
         PageFactory.initElements(driver, this);
     }
 
-    // Funcoes e Metodos
+    // Funções e Métodos
     public String lerTituloDoProduto(){
         return lblTituloProduto.getText();
     }
 
-    public String lerPrecoDoPrduto(){
+    public String lerPrecoDoProduto(){
         return lblPrecoProduto.getText();
     }
+
+
+
 
 
 }

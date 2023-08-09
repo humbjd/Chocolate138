@@ -11,10 +11,9 @@ public class HomePage extends CommonPage {
     // Linguagem Estruturada de Dominio
     // "Como falamos aqui na empresa"
 
-
     // Elementos Web / Web Elements --> Os que serão mapeados
     @FindBy(id = "user-name") // mapeia o elemento pelo seletor
-    WebElement txtUsuario;
+            WebElement txtUsuario;
 
     @FindBy(id = "password")
     WebElement txtSenha;
@@ -25,18 +24,18 @@ public class HomePage extends CommonPage {
     // Construtor / Constructor
 
     public HomePage(WebDriver driver) {
-        super(driver);         // instancia a classe mae como superclasse
+        super(driver);        // instancia a classe mãe como superclasse
         PageFactory.initElements(driver, this); // conecta o objeto interno e o externo do Selenium
     }
-
 
     // Funções e Métodos
     public void logar(String user, String password){
         txtUsuario.sendKeys(user);
         txtSenha.sendKeys(password);
+
     }
 
-    public void clicarNoBotaopLogin(){
+    public void clicarNoBotaoLogin(){
         btnLogin.click();
     }
 
